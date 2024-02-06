@@ -111,7 +111,7 @@ Description = Mozzilla splash page
       <h1>Mozilla</h1>
       <!-- insert <img> element, link to the small
           version of the Firefox logo -->
-          <img src="originals/firefoxlogo120.png" alt="A small fire fox logo">
+          <img src="firefoxlogo120.png" alt="A small fire fox logo">
 
     </header>
 
@@ -130,23 +130,45 @@ Description = Mozzilla splash page
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="originals/firefoxlogo400.png" alt="firfox logo">
+          <img
+              srcset="firefoxlogo400.png 400w ,
+                    firefoxlogo120.png 120w"
+              sizes="(max-width: 600px) 120px,
+                    400px"
+              src="firefox-addons400.png" alt="Firefox logo">
+
         </a>
         <a href="https://www.mozilla.org/">
-          <img src="originals/mozilla-dinosaur-head400.png" alt="image of a dinosaur head">
+          <img 
+              srcset="mozilla-dinosaur-head400.png 400w,
+                      mozilla-dinosaur-head120.png 120w"
+              sizes="(max-width: 600px) 120px,
+                    400px"        
+          
+              src="mozilla-dinosaur-head400.png" alt="image of a dinosaur head">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img src="originals/firefox-addons400.png" alt="image of scatterd puzzle of fire fox logo">
+          <img 
+              srcset="firefox-addons120.png 120w,
+                      firefox-addons400.png 400w"
+              sizes="(max-width: 600w) 120px,
+                      400px"        
+              src="firefox-addons400.png" alt="image of scatterd puzzle of fire fox logo">
         </a>
+
         <a href="https://developer.mozilla.org/en-US/">
-          <img src="originals/mdn.svg" alt="raw image file of a dinosaur head">
+          <img
+              src="mdn.svg" alt="raw image file of a dinosaur head">
         </a>
+
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- insert picture element -->
-        <picture></picture>
+        <picture>
+          <img src="" alt="">
+        </picture>
       </div>
 
     </main>
