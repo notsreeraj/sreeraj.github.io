@@ -14,10 +14,14 @@ Description = This is a cool looking box
     width: 300px;
     line-height: 10;
     margin: auto;
-    font-size: 1.111rem;/*Font size is set to a values in terms of rems.*/
-    background-color:#48a3e0;
-    color: #000;
+    font-size: 1.111rem;/*Font size is set 1.111rems.*/
+    background-color:#30C2F3;
+    color: black;
     text-shadow: 1px 1px 1px black;
     text-align: center;
+    border-radius: 1rem;
+    border 1px 
+    
+
 
  }
