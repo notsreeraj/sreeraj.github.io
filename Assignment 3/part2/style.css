@@ -1,8 +1,18 @@
 /* 
 Name = Sreeraj Chemmadath Sreenivasan
 Student ID = 100911366
-File name = index.html
+File name = style.css
 Description = This is a cool looking box
  */
 
- html fo
+ html{
+    font-family: sans-serif;
+ }
+
+ div{
+
+    width: 300px;
+    line-height: 10;
+    
+
+ }
