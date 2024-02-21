@@ -13,12 +13,11 @@ Description = This is a cool looking box
 
     width: 300px;
     line-height: 10;
-
     margin: auto;
-
-    /*Font size is set to a values in terms of rems.*/
-    font-size: 1.111rem;
-
-    background-color:#48a3e0 ;
+    font-size: 1.111rem;/*Font size is set to a values in terms of rems.*/
+    background-color:#48a3e0;
+    color: #000;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
 
  }
