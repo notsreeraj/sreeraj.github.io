@@ -59,10 +59,14 @@ z
 
 @font-face{
     font-family: headingFont;
-    src:url(font/headFont/Bebas_Neue\,Protest_Revolution/.ttf);
+    src:url(font/headFont/Protest_Revolution/ProtestRevolution-Regular.ttf);
 }
 
   body{
     font-family: bodyFont;
+  }
+
+  head{
+    font-family: headinfFont;
   }
 
