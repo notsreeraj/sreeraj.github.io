@@ -64,9 +64,14 @@ z
 
   body{
     font-family: bodyFont;
-  }
+    font-size: 10px;
+    line-height: 15px  }
 
   head{
     font-family: headinfFont;
+    font-size: 20px; 
   }
-
+  header{
+    text-align: center;
+    letter-spacing: 7px;
+  }
