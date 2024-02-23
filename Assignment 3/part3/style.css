@@ -1,0 +1,68 @@
+/* 
+Name = Sreeraj Chemmadath Sreenivasan
+Student ID = 100911366
+File name = style.css
+Description = Webpage for a fake college
+ */
+z
+
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+
+  @font-face {
+    font-family: bodyFont;
+    src: url(font/bodyFont/Bebas_Neue/BebasNeue-Regular.ttf);
+  }
+
+@font-face{
+    font-family: headingFont;
+    src:url(font/headFont/Bebas_Neue\,Protest_Revolution/.ttf);
+}
+
+  body{
+    font-family: bodyFont;
+  }
+
