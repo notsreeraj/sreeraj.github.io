@@ -82,3 +82,13 @@ z
     text-indent: 20px;
     font-size: 15px;
   }
+  /*here ":" is used to create psuedoClasses like hover , visited and focus*/
+a:visited{
+    color : #118939;
+}
+a:focus{/* this would work when we use tab key to access the website*/
+    color:purple;   
+}
+a:hover{
+    color: red
+}
