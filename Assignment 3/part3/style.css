@@ -87,8 +87,15 @@ a:visited{
     color : #118939;
 }
 a:focus{/* this would work when we use tab key to access the website*/
-    color:purple;   
+    color:purple; 
+    outline : none;/*to remove default focus outline from all the pages*/  
 }
 a:hover{
     color: red
 }
+a:external::after{
+    content: url(icon/external-link-52.png);
+    margin-left:5px;
+    
+}
+
