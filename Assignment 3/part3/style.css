@@ -93,9 +93,26 @@ a:focus{/* this would work when we use tab key to access the website*/
 a:hover{
     color: red
 }
-a[href*="http"] {
+
+a[href*="http"] { /*To add icons to every links starting with http*/
   padding-right: 19px;
   background:url(icon/external-link-52.png) no-repeat 100% 0;
   background-size: 16px 16px;
 }
+li{
+  line-height: 1.5em;
+}
+nav ul{ /*this will touch every unordered list inside the nav tag*/
+  padding-left:0;
+  margin-top: 0.8rem;
+}
+nav li{/*This will touch every list items inside the nav tag list */
+  list-style-type:none;
+  margin-bottom : 2rem;
+}
+nav li a {/*this will touch every links in the list inside the nava tag*/
 
+  text-decoration: none;
+  display: inline-block;
+  width
+}
