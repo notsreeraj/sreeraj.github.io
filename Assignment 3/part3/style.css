@@ -114,5 +114,7 @@ nav li a {/*this will touch every links in the list inside the nava tag*/
 
   text-decoration: none;
   display: inline-block;
-  width
+  width:100%;
+  line-height: 3;
+  text-align: center
 }
