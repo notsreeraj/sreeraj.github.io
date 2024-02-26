@@ -16,8 +16,8 @@ Description = This is a cool looking box
     margin: auto;
     font-size: 1.111rem;/*Font size is set 1.111rems.*/
     background-color:#30C2F3;
-    color: black;
-    text-shadow: 1px 1px 1px whitblack;
+    color: white;
+    text-shadow: 1px 1px 1px black;
     text-align: center;
     border-radius: 1rem;/*to make the corners rounded*/ 
     border :1px solid #0c6f85; 
