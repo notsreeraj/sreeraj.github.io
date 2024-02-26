@@ -17,11 +17,15 @@ Description = This is a cool looking box
     font-size: 1.111rem;/*Font size is set 1.111rems.*/
     background-color:#30C2F3;
     color: black;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px whitblack;
     text-align: center;
-    border-radius: 1rem;
-    border :1px; 
-    
-
+    border-radius: 1rem;/*to make the corners rounded*/ 
+    border :1px solid #0c6f85; 
+    background-image: linear-gradient(to top left,
+     rgba(0,0,0,0.3), 
+     rgba(0,0,0,0.3) 30%, 
+     rgba(0,0,0,0));
+     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.7),
+     inset -2px -2px 3px rgba(0, 0, 0, 0.7), 3px 3px 6px black;   
 
  }
