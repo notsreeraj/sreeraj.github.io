@@ -116,5 +116,15 @@ nav li a {/*this will touch every links in the list inside the nava tag*/
   display: inline-block;
   width:100%;
   line-height: 3;
-  text-align: center
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid purple;
+}
+nav li a:focus, nav li a:hover {
+  color: white;
+  background: #a66;
+}
+nav li a:active {
+  color: white;
+  background: black;
 }
