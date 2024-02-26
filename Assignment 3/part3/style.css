@@ -93,9 +93,9 @@ a:focus{/* this would work when we use tab key to access the website*/
 a:hover{
     color: red
 }
-a:external::after{
-    content: url(icon/external-link-52.png);
-    margin-left:5px;
-    
+a[href*="http"] {
+  padding-right: 19px;
+  background:url(icon/external-link-52.png) no-repeat 100% 0;
+  background-size: 16px 16px;
 }
 
