@@ -85,31 +85,35 @@ z
     letter-spacing: 5px;
   }
  
+  a {
+    outline: none;
+  }
     /*here ":" is used to create psuedoClasses like hover , visited and focus*/
-a:link, a:visited {
-  color: #a66;
-}
+  a:link, a:visited {
+    color: #a66;
+  }
 
-a:focus{/* this would work when we use tab key to access the website*/
-  color:purple; 
-  
-}
-a:hover{
-  color: red;
-  text-decoration: none;
-}
-a:active {
-  color: transparent;
-  text-shadow: 0px 0px 1px #f00,
-               0px 0px 2px #f00,
-               0px 0px 3px black,
-               0px 0px 4px black;
-}
-a[href*="http"] { /*To add icons to every links starting with http*/
-  padding-right: 19px;
-  background:url(icon/external-link-52.png) no-repeat 100% 0;
-  background-size: 16px 16px;
-}
+  a:focus{/* this would work when we use tab key to access the website*/
+    color:purple; 
+    
+  }
+  a:focus, a:hover {
+    text-decoration: none;
+  }
+  a:active {
+    color: transparent;
+    text-shadow: 0px 0px 1px #f00,
+                0px 0px 2px #f00,
+                0px 0px 3px black,
+                0px 0px 4px black;
+  }
+
+
+  a[href*="http"] { /*To add icons to every links starting with http*/
+    padding-right: 19px;
+    background:url(icon/external-link-52.png) no-repeat 100% 0;
+    background-size: 16px 16px;
+  }
 ul,ol{
   margin: 1.5rem 0;
 }
