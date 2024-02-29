@@ -55,10 +55,15 @@ z
   @font-face {
     font-family: random_font;
     src: url(font/bodyFont/Bebas_Neue/BebasNeue-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+    
   }
   @font-face {
     font-family: heading_font;
     src: url(font/headFont/Protest_Revolution/ProtestRevolution-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
   }
 
   html{
@@ -68,23 +73,31 @@ z
 
   h1,h2{
     font-family:heading_font ;
+    letter-spacing: 2px;
   }
 
-  body{
-    line-height: normal;
-    letter-spacing: normal;
-    word-spacing: normal;
+  h1 {
+    font-size: 5rem;
+    text-align: center;
   }
-  section > h2 + p { /* targets p elements directly after the h2 tag*/
+
+  h2 {
+    font-size: 3.2rem;
+  }
+  section  h2 + p { /* targets p elements directly after the h2 tag*/
     text-indent: 20px;
   }
 
-  header{
-    text-align: center;
-    font-size: 15px;
-    letter-spacing: 5px;
+  p, li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
   }
  
+
+  
+
   a {
     outline: none;
   }
@@ -93,10 +106,7 @@ z
     color: #a66;
   }
 
-  a:focus{/* this would work when we use tab key to access the website*/
-    color:purple; 
-    
-  }
+  /* this would work when we use tab key to access the website*/ 
   a:focus, a:hover {
     text-decoration: none;
   }
@@ -114,41 +124,45 @@ z
     background:url(icon/external-link-52.png) no-repeat 100% 0;
     background-size: 16px 16px;
   }
-ul,ol{
-  margin: 1.5rem 0;
-}
-ul{
-  list-style-type: circle;
-}
-ol{
-  list-style-type: disc;
-}
-/* styling for nav menu*/
 
-nav ul {
-  padding-left: 0;
-  margin-top: 0.8rem;
-}
 
-nav li{
-  list-style-type: none ;
-  margin-bottom: 2rem;
-}
-nav li a {
-  text-decoration: none;
-  display: inline-block;
-  width: 100%;
-  line-height: 3;
-  text-align: center;
-  font-size: 2.5rem;
-  border: 1px solid #a66
-}
 
-nav li a:focus , nav li a:hover{
-  color: white;
-  background:#a66 ;
-}
-nav li a:active{
-  color: white;
-  background: black;
-}
+    ul,ol{
+      margin: 1.6rem 0;
+    }
+    ul{
+      list-style-type: circle;
+    }
+    ol{
+      list-style-type: lower-greek;
+    }
+
+    /* styling for nav menu*/
+
+    nav ul {
+      padding-left: 0;
+      margin-top: 0.8rem;
+    }
+
+    nav li{
+      list-style-type: none ;
+      margin-bottom: 2rem;
+    }
+    nav li a {
+      text-decoration: none;
+      display: inline-block;
+      width: 100%;
+      line-height: 3;
+      text-align: center;
+      font-size: 2.5rem;
+      border: 1px solid #a66
+    }
+
+    nav li a:focus , nav li a:hover{
+      color: white;
+      background:#a66 ;
+    }
+    nav li a:active{
+      color: white;
+      background: black;
+    }
