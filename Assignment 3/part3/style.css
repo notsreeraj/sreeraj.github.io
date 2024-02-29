@@ -71,6 +71,7 @@ z
   }
 
   body{
+    font-family:random_font ;
     line-height: normal;
     letter-spacing: normal;
     word-spacing: normal;
@@ -86,19 +87,24 @@ z
   }
  
     /*here ":" is used to create psuedoClasses like hover , visited and focus*/
-a:visited{
-  color : #118939;
-}
+    a:link, a:visited {
+      color: #a66;
+    }
+
 a:focus{/* this would work when we use tab key to access the website*/
   color:purple; 
-  outline : none;/*to remove default focus outline from all the pages*/  
+  
 }
 a:hover{
-  color: red
+  color: red;
+  text-decoration: none;
 }
 a[href*="http"] { /*To add icons to every links starting with http*/
   padding-right: 19px;
   background:url(icon/external-link-52.png) no-repeat 100% 0;
   background-size: 16px 16px;
 }
-
+li{
+  line-height: normal;
+  padding: auto;
+}
