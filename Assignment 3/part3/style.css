@@ -4,7 +4,7 @@ Student ID = 100911366
 File name = style.css
 Description = Webpage for a fake college
  */
-z
+
 
 /* General setup */
 
@@ -94,9 +94,6 @@ z
     letter-spacing: 0.5px;
     word-spacing: 3px;
   }
- 
-
-  
 
   a {
     outline: none;
@@ -111,11 +108,7 @@ z
     text-decoration: none;
   }
   a:active {
-    color: transparent;
-    text-shadow: 0px 0px 1px #f00,
-                0px 0px 2px #f00,
-                0px 0px 3px black,
-                0px 0px 4px black;
+    color: purple;
   }
 
 
@@ -151,7 +144,8 @@ z
     nav li a {
       text-decoration: none;
       display: inline-block;
-      width: 100%;
+      width: 150px;
+      padding: 10px;
       line-height: 3;
       text-align: center;
       font-size: 2.5rem;
