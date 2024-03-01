@@ -30,7 +30,9 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
-    display: flex;
+    display: grid;
+    gap : 20px;
+    grid-template-columns: 3fr 1fr;
   }
   
   nav {
@@ -69,3 +71,4 @@ body {
       float: left;
       padding: normal; /*to add gap between the image and text*/
   }
+  
