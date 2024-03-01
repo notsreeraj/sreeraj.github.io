@@ -32,17 +32,15 @@ body {
   
   nav {
     background-color: #000;
-    padding: .5em;
+    padding: normal;
+    position: sticky;
   }
   
   nav ul {
-    margin: normal;
-    padding: absolute;
-    position: relative;
-    list-style: ;
+    list-style: none;
     display: flex;
+    justify-content: space-between;
   }
-  
   nav a {
     color: #fff;
     text-decoration: none;
