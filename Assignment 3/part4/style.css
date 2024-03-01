@@ -61,7 +61,7 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1px;
 
   }
@@ -69,6 +69,6 @@ body {
   .feature {
       width: 200px;
       float: left;
-      padding: normal; /*to add gap between the image and text*/
+      margin: 0 20px 20px 0;
   }
   
