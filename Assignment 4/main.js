@@ -34,11 +34,19 @@ function result() {
     const name = customName.value;
     newStory = newStory.replace("Bob",name);
 
+    // replace the rest of the insert items in the story
+    newStory = newStory.replace(":insertx:",xItem);
+    newStory = newStory.replace(":inserty:",yItem);
+    newStory = newStory.replace(":insertz:",zItem);
+
+
   }
 
   if(document.getElementById("uk").checked) {
     const weight = Math.round(300);
     const temperature =  Math.round(94);
+
+    newStory = newStory.replace()
 
   }
 
