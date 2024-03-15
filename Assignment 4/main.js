@@ -24,7 +24,11 @@ randomize.addEventListener('click', result);
 
 function result() {
 
+  const newStory = storyText;
   
+  const xItem = insertx;
+  const yItem = inserty;
+  const zItem = insertz;
 
   if(customName.value !== '') {
     const name = customName.value;
