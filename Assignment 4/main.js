@@ -32,6 +32,7 @@ function result() {
 
   if(customName.value !== '') {
     const name = customName.value;
+    newStory = newStory.replace("Bob",name);
 
   }
 
@@ -41,6 +42,6 @@ function result() {
 
   }
 
-  story.textContent = ;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
