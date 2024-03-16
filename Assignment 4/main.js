@@ -43,7 +43,7 @@ function result() {
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
+    const weight = Math.round(300);// convert these into kg and celsius
     const temperature =  Math.round(94);
 
     
