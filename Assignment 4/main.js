@@ -24,21 +24,21 @@ randomize.addEventListener('click', result);
 
 function result() {
 
-  const newStory = storyText;
+  let newStory = storyText;
   
   const xItem = randomValueFromArray(insertx);
   const yItem = randomValueFromArray(inserty);
   const zItem = randomValueFromArray(insertz);
+    
+  // replace the rest of the insert items in the story
+     newStory = newStory.replaceAll(":insertx:",xItem);
+     newStory = newStory.replaceAll(":inserty:",yItem);
+     newStory = newStory.replaceAll(":insertz:",zItem);
+ 
 
   if(customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace("Bob",name);
-
-    // replace the rest of the insert items in the story
-    newStory = newStory.replace(":insertx:",xItem);
-    newStory = newStory.replace(":inserty:",yItem);
-    newStory = newStory.replace(":insertz:",zItem);
-
+    newStory = newStory.replaceAll('Bob',name);
 
   }
 
@@ -46,7 +46,7 @@ function result() {
     const weight = Math.round(300);
     const temperature =  Math.round(94);
 
-    newStory = newStory.replace()
+    
 
   }
 
