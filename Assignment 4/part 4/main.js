@@ -29,10 +29,7 @@ class Shape {
 class Ball extends Shape{
     //created a constructor
     constructor(x,y,velX,velY,color,size){
-        this.x = x;
-        this.y=y;
-        this.velX = velX;
-        this.velY = velY;
+        super(x, y, velX, velY);
         this.color = color;
         this.size = size;
         this.exists = true;// New property to track if the ball exists
@@ -65,17 +62,17 @@ class Ball extends Shape{
       }
 
     collisionDetect() {
-    for (const ball of balls) {
-        if (this !== ball) {
-        const dx = this.x - ball.x;
-        const dy = this.y - ball.y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-    
-        if (distance < this.size + ball.size) {
-            ball.color = this.color = randomRGB();
-        }
-        }
-    }
+        for (const ball of balls) {
+            if (!(this === ball) && ball.exists) {
+              const dx = this.x - ball.x;
+              const dy = this.y - ball.y;
+              const distance = Math.sqrt(dx * dx + dy * dy);
+        
+              if (distance < this.size + ball.size) {
+                ball.color = this.color = randomRGB();
+              }
+            }
+          }
     }
     
       
