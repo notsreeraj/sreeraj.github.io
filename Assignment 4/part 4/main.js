@@ -35,7 +35,7 @@ class Ball extends Shape{
         this.velY = velY;
         this.color = color;
         this.size = size;
-        this.exists = true; // New property to track if the ball exists
+        this.exists = true;// New property to track if the ball exists
     }
     draw(){
         ctx.beginPath();
