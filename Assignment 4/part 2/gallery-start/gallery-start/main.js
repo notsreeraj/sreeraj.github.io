@@ -5,11 +5,11 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const images = ['pic1.jpg','pic2.jpg','pic3.jpg','pic4.jpg','pic5.jpg',];
+const images = [`pic1.jpg`,`pic2.jpg`,`pic3.jpg`,`pic4.jpg`,`pic5.jpg`,];
 
 /* Declaring the alternative text for each image file */
 const alternateImages ={
-    'pic1.jpg' :  "A human eye",
+    'pic1.jpg' :  "Close up of a human eye",
     'pic2.jpg' :  'Rock with a wavy design',
     'pic3.jpg' :  'Purple and White Pansie Flower',
     'pic4.jpg' :  'Sections of a wall from a Pharoahs\'s tomb',
@@ -18,13 +18,13 @@ const alternateImages ={
 }
 
 /* Looping through images */
-for(const imageIndex of images)
-    {const newImage = document.createElement('img');
-    newImage.setAttribute('src', `images/${imageIndex}`);
-    newImage.setAttribute('alt', alts[imageIndex]);
+for(const image of images){
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src', `images/${image}`);
+    newImage.setAttribute('alt', alternateImages[image]);
     thumbBar.appendChild(newImage);
-    /*this to dispkay an image when clicked and also its corresponding alternates */
-    newImage.addEventListener('Click',e =>{
+    /*this to display an image when clicked and also its corresponding alternates */
+    newImage.addEventListener('click',e =>{
         displayedImage.src = e.target.src;
         displayedImage.alt = e.target.alt;
         });
@@ -34,9 +34,9 @@ for(const imageIndex of images)
 btn.addEventListener(`click`,() => {
     const btnClass = btn.getAttribute('class');
     if(btnClass === 'dark'){
-        btn.setAttribute('class','dark');
+        btn.setAttribute('class','light');
         btn.textContent='Lighten';
-        overlay.style.backgroundColor = 'rgba(0,0,0,0)';
+        overlay.style.backgroundColor = 'rgba(0,0,0,0.7)';
     }
     else{
         btn.setAttribute('class','dark');
