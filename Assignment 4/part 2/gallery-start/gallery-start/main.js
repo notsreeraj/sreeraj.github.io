@@ -20,8 +20,8 @@ const alternateImages ={
 /* Looping through images */
 for(const imageIndex of images)
     {const newImage = document.createElement('img');
-    newImage.setAttribute('src', imageIndex);
-    newImage.setAttribute('alt', imageIndex);
+    newImage.setAttribute('src', `images/${imageIndex}`);
+    newImage.setAttribute('alt', alts[imageIndex]);
     thumbBar.appendChild(newImage);
     /*this to dispkay an image when clicked and also its corresponding alternates */
     newImage.addEventListener('Click',e =>{
