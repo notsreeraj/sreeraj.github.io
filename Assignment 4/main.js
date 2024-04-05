@@ -41,6 +41,7 @@ function result() {
     newStory = newStory.replaceAll('Bob',name);
 
   }
+  
 
   if(document.getElementById("uk").checked) {
     const weight = ` ${Math.round(300 * 0.45359237)} kg`;// convert these into kg and celsius
