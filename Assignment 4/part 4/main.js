@@ -146,8 +146,11 @@ class EvilCircle extends Shape {
   }// class ends here
   
 
-// to generate number of balls between 1-25
+// creat bal and evil circle
 const balls = [];
+const evilCircle = new EvilCircle(random(0, width), 
+random(0, height));
+
 
 while (balls.length < 25) {
   const size = random(10, 20);
@@ -165,21 +168,9 @@ while (balls.length < 25) {
 
   balls.push(ball);
 }
-// animation loop for the canvas 
-function loop() {
-    ctx.fillStyle = "rgb(0 0 0 / 25%)";
-    ctx.fillRect(0, 0, width, height);
-  
-    for (const ball of balls) {
-      ball.draw();
-      ball.update();
-      ball.collisionDetect();
-    }
-  
-    requestAnimationFrame(loop);
-  }
 
-  // function to update ball count
+
+// function to update ball count
   function updateBallCount() {
     const remainingBalls = balls.filter(ball => ball.exists).length;
     document.getElementById("ballCount").textContent = remainingBalls;
@@ -187,8 +178,7 @@ function loop() {
   }
   
 // evil circle object
-// Create a new EvilCircle object instance
-const evilCircle = new EvilCircle(50, 50);
+
 
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
