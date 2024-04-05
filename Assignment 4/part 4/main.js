@@ -74,9 +74,18 @@ class Ball extends Shape{
             }
           }
     }
-    
-      
-}
+        
+}// balls class ends here
+
+class EvilCircle extends Shape {
+    constructor(x, y) {
+      super(x, y, 20, 20); // Pass x, y to the Shape constructor, with velX and velY hardcoded to 20
+      this.color = 'white';
+      this.size = 10;
+    }
+  
+  }
+  
 
 // to generate number of balls between 1-25
 const balls = [];
