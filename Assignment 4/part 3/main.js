@@ -19,7 +19,7 @@ function randomRGB() {
 // defining a class names ball
 class Ball{
     //created a constructor
-    constructor(x,y,velX,velY,size){
+    constructor(x,y,velX,velY,color,size){
         this.x = x;
         this.y=y;
         this.velX = velX;
@@ -61,3 +61,34 @@ testBall.size;
 testBall.color;
 testBall.draw();
 
+// to generate number of balls between 1-25
+const balls = [];
+
+while (balls.length < 25) {
+  const size = random(10, 20);
+  const ball = new Ball(
+  
+    random(0 + size, width - size),
+    random(0 + size, height - size),
+    random(-7, 7),
+    random(-7, 7),
+    randomRGB(),
+    size,
+  );
+
+  balls.push(ball);
+}
+
+function loop() {
+    ctx.fillStyle = "rgb(0 0 0 / 25%)";
+    ctx.fillRect(0, 0, width, height);
+  
+    for (const ball of balls) {
+      ball.draw();
+      ball.update();
+    }
+  
+    requestAnimationFrame(loop);
+  }
+  
+  loop();
