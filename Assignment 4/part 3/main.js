@@ -70,11 +70,14 @@ class Ball{
     
       
 }
-const testBall = new Ball(50,100,4,4,"blue",10);
+// for testing out 
+const testBall = new Ball(50, 100, 4, 4, "blue", 10);
 testBall.x;
 testBall.size;
 testBall.color;
 testBall.draw();
+
+
 
 // to generate number of balls between 1-25
 const balls = [];
@@ -95,7 +98,7 @@ while (balls.length < 25) {
 
   balls.push(ball);
 }
-
+// animation loop for the canvas 
 function loop() {
     ctx.fillStyle = "rgb(0 0 0 / 25%)";
     ctx.fillRect(0, 0, width, height);
