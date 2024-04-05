@@ -138,6 +138,7 @@ class EvilCircle extends Shape {
     
             if (distance < this.size + balls[j].size) {
               balls[j].exists = false;
+              updateBallCount();
             }
           }
         }
@@ -177,8 +178,40 @@ function loop() {
   
     requestAnimationFrame(loop);
   }
+
+  // function to update ball count
+  function updateBallCount() {
+    const remainingBalls = balls.filter(ball => ball.exists).length;
+    document.getElementById("ballCount").textContent = remainingBalls;
   
-  loop();
-// shape class
+  }
+  
+// evil circle object
+// Create a new EvilCircle object instance
+const evilCircle = new EvilCircle(50, 50);
+
+function loop() {
+  ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
+  ctx.fillRect(0, 0, width, height);
+
+  // Loop through each ball in the balls array
+  for (let i = 0; i < balls.length; i++) {
+    // Only call the ball's methods if it exists
+    if (balls[i].exists) {
+      balls[i].draw();
+      balls[i].update();
+      balls[i].collisionDetect();
+    }
+  }
+
+  // Call the EvilCircle's methods on every iteration of the loop
+  evilCircle.draw();
+  evilCircle.checkBounds();
+  evilCircle.collisionDetect();
+
+  requestAnimationFrame(loop);
+}
+
+loop();
 
   
