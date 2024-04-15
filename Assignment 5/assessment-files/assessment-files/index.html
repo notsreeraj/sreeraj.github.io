@@ -29,7 +29,8 @@
     <header><h1>Welcome to our wildlife website</h1></header>
     
 
-    <div class="nav">
+    
+    <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Our team</a></li>
@@ -41,7 +42,8 @@
         <input type="search" name="q" placeholder="Search query">
         <input type="submit" value="Go!">
       </form>
-    </div>
+    </nav>
+    
 
     <main>
       <article>
@@ -60,20 +62,20 @@
         
             Bears can also be classified in terms of their habitat — both large and medium bears are just as at home in urban areas as they are in the countryside. Different habitats encourange different behaviour however, as you'll find out below. The below table also gives you some useful facts about bears.
             </p>
-        <table>
+        <table summary="Bear types, coat colors, sizes, habitats, lifespans, and diets">
           <thead>
             <tr>
-              <td>Bear Type</td>
-              <td>Coat</td>
-              <td>Adult size</td>
-              <td>Habitat</td>
-              <td>Lifespan</td>
-              <td>Diet</td>
+              <td scope = "col">Bear Type</td>
+              <td scope = "col">Coat</td>
+              <td scope = "col">Adult size</td>
+              <td scope = "col">Habitat</td>
+              <td scope = "col">Lifespan</td>
+              <td scope = "col">Diet</td>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Wild</td>
+              <td scope = "row">Wild</td>
               <td>Brown or black</td>
               <td>1.4 to 2.8 meters</td>
               <td>Woods and forests</td>
@@ -81,7 +83,7 @@
               <td>Fish, meat, plants</td>
             </tr>
             <tr>
-              <td>Urban</td>
+              <td scope = "row">Urban</td>
               <td>North Face</td>
               <td>18 to 22</td>
               <td>Condos and coffee shops</td>
